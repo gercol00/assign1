@@ -9,7 +9,7 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <style>
-        #message {
+        #box {
             display: inline;
             font-size: small;
             margin: 5px;
@@ -25,10 +25,24 @@
             CSCE 41333 Cloud App Development Simple SPA
         </a>
     </nav>
+    
+    <h3>Add New User</h3>
+    <input type="text" id="username" placeholder="Username">
+    <input type="text" id="firstname" placeholder="First Name">
+    <input type="text" id="lastname" placeholder="Last Name">
+    <input type="password" id="passwd" placeholder="Password">
+    <input type="email" id="email" placeholder="Email">
+    <input type="text" id="urole" placeholder="Role">
+    <button id="adduser">Add User</button>
+
+    <br><br>
+
+    <h3>Users</h3>
+
     <div class="container">
         <div class="col">
             <button id="refresh" class="btn btn-primary">Refresh Users</button>
-            <div id="message"></div>
+            <div id="box"></div>
             <table id="usertable" class="table table-bordered table-striped">
 
             </table>
